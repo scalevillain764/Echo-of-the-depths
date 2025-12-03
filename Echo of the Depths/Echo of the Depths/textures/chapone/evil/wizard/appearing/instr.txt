@@ -1,0 +1,3 @@
+frame height: 200px
+frame width: 186px
+frames: 5

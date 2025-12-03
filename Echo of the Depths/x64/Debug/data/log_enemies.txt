@@ -1,0 +1,14 @@
+hittted enemy : 0,+70, +10
+
+first location :
+skelet  (dmg 21, health 50, speed 50, attack delay 2.5s)
+
+second location :
+two golems (dmg 30, health 80, speed 38, attack delay 2.5s)
+
+third location :
+mush monster (10, 50, 60, 1)
+skelet guard (dmg 34, health 70, 50, 3);
+skelet from library (dmg 44, health 100, 50, 3);
+
+ if change max hp in constr (change in update)

@@ -1,0 +1,2 @@
+frame width : 284px
+frame height: 274px

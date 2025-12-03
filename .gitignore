@@ -1,0 +1,56 @@
+# Compiled source #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+*.pch
+*.pdb
+*.exp
+*.idb
+*.obj
+*.lib
+*.sln.docstates
+
+# Build folders #
+#################
+/build/
+/Build/
+/bin/
+/Bin/
+/out/
+/Out/
+/cmake-build-debug/
+/cmake-build-release/
+
+# Visual Studio cache #
+########################
+.vs/
+*.vcxproj.user
+*.vcxproj.filters
+*.db
+*.opendb
+
+# SFML #
+########
+sfml-build/
+SFML-*/
+
+# CMake #
+########
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+install_manifest.txt
+
+# Logs #
+########
+*.log
+
+# OS files #
+############
+Thumbs.db
+.DS_Store

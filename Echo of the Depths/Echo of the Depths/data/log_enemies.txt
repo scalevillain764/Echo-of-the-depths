@@ -1,0 +1,15 @@
+first location :
+skelet  (dmg 21, health 50, speed 50, attack delay 2.5s)
+
+second location :
+two golems (dmg 30, health 80, speed 38, attack delay 2.5s)
+
+third location :
+mush monster (10, 50, 60, 1)
+skelet guard (dmg 34, health 70, 50, 3);
+skelet from library (dmg 44, health 100, 50, 3);
+mush when u activate the torch (38, 100, 70, 1.5)
+wizard (boss) (lightning_damage, health, speed, attack_range, fireball damage, fireball speed, fireball texture,  // armor //)
+wizard_boss(20, 30, 500, 50, 450.f, 250.f, "textures/chapone/evil/wizard/fb.png")
+
+ if change max hp in constr (change in update)
