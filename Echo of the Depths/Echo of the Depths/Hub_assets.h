@@ -11,15 +11,17 @@ using std::string;
 using std::vector;
 
 class Hub_assets {
+private :
+	float window_half_width, window_half_height;
+	float map_width = 5000.f, map_height = 5000.f;
 public:
-	bool can_move = true;
 	std::vector<std::vector<Texture>> chunk_textures;
 	std::vector <std::vector<Chunk>> chunks;
 	std::vector<std::vector<sf::Image>> chunk_mask_imgs;
 	Texture crystal_left_texture, crystal_right_texture, crystal_top_texture, crystal_down_texture, mid_crystal_top_texture, 
 		mid_crystal_bot_texture;
 	Sprite mid_crystal_top_sprite;
-	Locations new_location;
+	Locations new_location = Locations::hub;
 
 	// tp rectangle fading
 	RectangleShape last_rect;

@@ -15,6 +15,9 @@ Hub_assets::Hub_assets(RenderWindow& window, Font& font) :
 	black_rect.setSize(sf::Vector2f(1920.f, 1080.f));
 	black_rect.setFillColor(sf::Color(0, 0, 0, 170));
 
+	window_half_height = window.getSize().x / 2;
+	window_half_width = window.getSize().y / 2;
+
 	wastelands_of_ash.load_texture("textures/chaptwo/wastelands_of_ash/description.png");  cold_memories.load_texture("textures/chaptwo/cold_memories/description.png");
 	broken_lands.load_texture("textures/chaptwo/broken_lands/description.png"); forests_of_echo.load_texture("textures/chaptwo/forests_of_echo/description.png");
 
@@ -290,7 +293,11 @@ void Hub_assets::chunk_setTextures() {
 }
 
 void Hub_assets:: update_camera(RenderWindow& window, MainPlayer& player) {
-	cam.setCenter(player.sprite.getPosition().x, player.sprite.getPosition().y);
+	float camX = std::clamp(player.sprite.getPosition().x, window_half_width, map_width - window_half_width);
+	float camY = std::clamp(player.sprite.getPosition().y, window_half_height, map_height - window_half_height );
+
+	cam.setCenter(camX, camY);
+
 	window.setView(cam);
 }
 
