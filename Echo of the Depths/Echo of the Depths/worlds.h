@@ -176,7 +176,14 @@ public :
 	}
 
 	bool load_chunk_mask() override {
-		return false;
+		for (int raw = 0; raw < chunk_mask_imgs.size(); raw++) {
+			for (int column = 0; column < chunk_mask_imgs[raw].size(); column++) {
+				if (!chunk_mask_imgs[raw][column].loadFromFile("textures/chaptwo/forests_of_echo/mask_chunks/chunk_mask" + std::to_string(raw + 1) + '_' + std::to_string(column + 1) + ".png")) {
+					return false;
+				}
+			}
+		}
+		return true;
 	}
 
 	void update_and_draw_all(MainPlayer& player, RenderWindow& window, SwordSlashEffect& swordEffect) const override {

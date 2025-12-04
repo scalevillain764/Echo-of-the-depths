@@ -1009,7 +1009,7 @@ GameState forests_of_echo_lvl(RenderWindow& window, MainPlayer& player, sf::Font
 	SwordSlashEffect swordEffect;
 
 	Forests_of_echo_assets assets(window);
-	if (assets.load_chunk_textures()) {
+	if (assets.load_chunk_textures() && assets.load_chunk_mask()) {
 		assets.chunk_setTextures();
 	}
 	else {
