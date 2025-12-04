@@ -152,6 +152,7 @@ public :
 	Forests_of_echo_assets(RenderWindow &window) {
 		window_half_width = window.getSize().x / 2;
 		window_half_height = window.getSize().y / 2;
+		cam.setSize(window.getSize().x, window.getSize().y);
 
 		chunks.resize(5);
 		chunk_textures.resize(5);

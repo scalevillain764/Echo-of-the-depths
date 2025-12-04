@@ -1062,8 +1062,6 @@ GameState forests_of_echo_lvl(RenderWindow& window, MainPlayer& player, sf::Font
 			player.drawEffectsVisuals(window, player);
 			assets.update_and_draw_all(player, window, swordEffect);
 
-		
-
 			window.setView(window.getDefaultView());
 			player.draw_inventory(window);
 			/*window.draw(pause.pause_button_sprite);*/
